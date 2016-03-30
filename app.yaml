@@ -1,0 +1,16 @@
+application: ente-keralam
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+handlers:
+- url: /res
+  static_dir: res
+
+- url: /menu
+  static_files: menu.html
+  upload: menu.html
+
+- url: /.*
+  static_files: index.html
+  upload: index.html
